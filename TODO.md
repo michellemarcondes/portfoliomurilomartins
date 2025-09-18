@@ -1,0 +1,1 @@
+- [x] Remove import and usage of Experience from src/App.jsx
