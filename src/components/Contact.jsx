@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 md:grid md:grid-cols-2 gap-8">
         <div>
           <img 
-            src="/studio.jpg" 
+            src="aboutimg.jpg" 
             alt="Foto contato" 
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />
