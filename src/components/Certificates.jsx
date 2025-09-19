@@ -5,10 +5,10 @@ const Certificates = () => {
   const [selectedCert, setSelectedCert] = useState(null)
 
   const certificates = [
-    { id: 1, title: 'Certificado em Logica de Programação', image: 'logica.pdf' },
-    { id: 2, title: 'Certificado HTML', image: 'certificadohtml.pdf' },
-    { id: 3, title: 'Certificado JavaScript', image: 'certificadojs.pdf' },
-    { id: 4, title: 'Certificado CC50 Harvard - Escola do Saber', image: 'harvard.pdf' },
+    { id: 1, title: 'Certificado em Logica de Programação', image: 'horadocogigo.png' },
+    { id: 2, title: 'Certificado HTML', image: 'htmlcert.png' },
+    { id: 3, title: 'Certificado JavaScript', image: 'jscert.png' },
+    { id: 4, title: 'Certificado CC50 Harvard - Escola do Saber', image: 'harvardcert.png' },
   ]
 
   const openModal = (cert) => {
@@ -23,12 +23,15 @@ const Certificates = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {certificates.map(cert => (
-            <div key={cert.id} className="bg-white shadow-md rounded-lg overflow-hidden text-center">
-              <iframe
+            <div
+              key={cert.id}
+              className="bg-white shadow-md rounded-lg overflow-hidden text-center cursor-pointer transform transition duration-300 hover:scale-105"
+              onClick={() => openModal(cert)}
+            >
+              <img
                 src={cert.image}
-                className="w-full h-64 cursor-pointer"
-                onClick={() => openModal(cert)}
-                title={cert.title}
+                alt={cert.title}
+                className="w-full h-48 object-contain"
               />
               <div className="p-4">
                 <h3 className="text-xl font-semibold">{cert.title}</h3>
@@ -49,10 +52,10 @@ const Certificates = () => {
                 </button>
               </div>
               <div className="p-4 flex justify-center">
-                <iframe
+                <img
                   src={selectedCert.image}
-                  className="w-full h-96"
-                  title={selectedCert.title}
+                  alt={selectedCert.title}
+                  className="w-full h-96 object-contain"
                 />
               </div>
               <div className="p-4 text-center">

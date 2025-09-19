@@ -5,9 +5,9 @@ const Contact = () => {
     <section id="contact" className="py-12 bg-white">
       <div className="container mx-auto px-4 md:grid md:grid-cols-2 gap-8">
         <div>
-          <img 
-            src="aboutimg.jpg" 
-            alt="Foto contato" 
+          <img
+            src="sala.jpg"
+            alt="Foto contato"
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />
         </div>
@@ -33,15 +33,15 @@ const Contact = () => {
           <div className="mt-8">
             <div className="flex items-center mb-4">
               <FaPhone className="text-dourado mr-2" />
-              <span>(19) 99999-9999</span>
+              <span>(19) 971498218</span>
             </div>
             <div className="flex items-center mb-4">
               <FaEnvelope className="text-dourado mr-2" />
-              <span>contato@gmail.com</span>
+              <span>35529.14@educacao.org.br</span>
             </div>
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-dourado mr-2" />
-              <span>Bairro x - Campinas, SP</span>
+              <span>São José - Campinas, SP</span>
             </div>
           </div>
         </div>
